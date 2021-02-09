@@ -1,0 +1,439 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Teko', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, right top, left top, color-stop(29.47%, #000D15), color-stop(63.86%, rgba(0, 13, 21, 0.8)), color-stop(98.26%, #000D15));
+  background: linear-gradient(270deg, #000D15 29.47%, rgba(0, 13, 21, 0.8) 63.86%, #000D15 98.26%);
+}
+
+img, svg {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #F4F7FB;
+}
+
+p {
+  font-size: 16px;
+  color: #A1A3A5;
+  letter-spacing: 1px;
+  line-height: 140%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  height: 80vh;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 90vh;
+  }
+}
+
+.container-item-1 {
+  max-width: 576px;
+  min-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container-item-1 h1 {
+  font-size: 1500%;
+  color: #F4F7FB;
+  letter-spacing: 3px;
+  line-height: 60%;
+}
+
+@media screen and (max-width: 960px) {
+  .container-item-1 h1 {
+    line-height: 100%;
+  }
+}
+
+.container-item-1 h2 {
+  color: #0087E6;
+  text-align: center;
+}
+
+.container-item-1 p {
+  margin: 24px 0px;
+}
+
+@media screen and (max-width: 960px) {
+  .container-item-1 {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+small {
+  color: #C3E2F9;
+  letter-spacing: .5px;
+  font-weight: 50;
+  opacity: .1;
+}
+
+.rights {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  .rights {
+    display: none;
+  }
+}
+
+.desc {
+  margin: 24px 0px;
+}
+
+.jersey {
+  width: 140%;
+  -webkit-transform: translate3d(-200px, 0, 0);
+          transform: translate3d(-200px, 0, 0);
+}
+
+@media screen and (max-width: 960px) {
+  .jersey {
+    width: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.buttons {
+  margin-right: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  background: linear-gradient(267.72deg, #74C2F9 0.88%, #0087E6 100%);
+  position: relative;
+  letter-spacing: 3px;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  margin-right: 20px;
+}
+
+.btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -5%;
+  left: 5%;
+  width: 90%;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-radius: 3px;
+  height: 110%;
+  opacity: 0;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.btn:hover:after {
+  opacity: 1;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  background: transparent;
+  position: relative;
+  letter-spacing: 3px;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  border: 2px solid #0087E6;
+}
+
+.btn-secondary::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 0%;
+  height: 103%;
+  background: linear-gradient(267.72deg, #74C2F9 0.88%, #0087E6 100%);
+  z-index: -1;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.btn-secondary:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.btn-secondary:hover::after {
+  width: 102%;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg-video::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: -webkit-gradient(linear, right top, left top, color-stop(15.46%, #000D15), color-stop(49.85%, rgba(0, 13, 21, 0.8)), color-stop(84.25%, #000D15));
+  background: linear-gradient(270deg, #000D15 15.46%, rgba(0, 13, 21, 0.8) 49.85%, #000D15 84.25%);
+}
+
+.bg-loader {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(225deg, #0087E6 0%, #0087E6 100%);
+}
+
+header {
+  width: 100%;
+  padding-top: 46px;
+}
+
+.navbar {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-list li {
+  margin-left: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-list {
+    display: none;
+  }
+}
+
+.bx {
+  width: 48px;
+  height: 48px;
+  background-color: #F4F7FB;
+  border-radius: 2px;
+  margin-right: 16px;
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .bx {
+    display: block;
+  }
+}
+
+.logo {
+  padding: 0 20px;
+  max-width: 88px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #A1A3A5;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  width: 2px;
+  height: 0px;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, white, rgba(255, 255, 255, 0));
+}
+
+.nav-link:hover {
+  color: #F4F7FB;
+}
+
+.nav-link:hover::after {
+  height: 50px;
+}
+
+.nav-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-social svg {
+  margin-right: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.nav-social svg path {
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.nav-social svg:hover path {
+  fill: #C3E2F9;
+  -webkit-transform: translate3d(0, -3px, 0);
+          transform: translate3d(0, -3px, 0);
+}
+
+.logo-orion {
+  fill: transparent;
+  -webkit-animation: logo-orion 12s ease infinite alternate;
+          animation: logo-orion 12s ease infinite alternate;
+}
+
+@-webkit-keyframes logo-orion {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
+    fill: transparent;
+  }
+  25% {
+    stroke-width: 1;
+    fill: transparent;
+    stroke-dasharray: 100 0;
+  }
+  60%, 100% {
+    stroke-width: 0.3;
+    fill: #F4F7FB;
+  }
+}
+
+@keyframes logo-orion {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
+    fill: transparent;
+  }
+  25% {
+    stroke-width: 1;
+    fill: transparent;
+    stroke-dasharray: 100 0;
+  }
+  60%, 100% {
+    stroke-width: 0.3;
+    fill: #F4F7FB;
+  }
+}
+/*# sourceMappingURL=style.css.map */

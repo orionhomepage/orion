@@ -247,8 +247,8 @@ small {
   top: 0;
   left: 0;
   display: block;
-  background: -webkit-gradient(linear, right top, left top, color-stop(15.46%, #000D15), color-stop(49.85%, rgba(0, 13, 21, 0.8)), color-stop(84.25%, #000D15));
-  background: linear-gradient(270deg, #000D15 15.46%, rgba(0, 13, 21, 0.8) 49.85%, #000D15 84.25%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(32.22%, #000D15), color-stop(49.85%, rgba(0, 13, 21, 0.8)), color-stop(67.23%, #000D15));
+  background: linear-gradient(270deg, #000D15 32.22%, rgba(0, 13, 21, 0.8) 49.85%, #000D15 67.23%);
 }
 
 .bg-loader {

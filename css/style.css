@@ -83,6 +83,7 @@ p {
 @media screen and (max-width: 960px) {
   .container-item-1 h1 {
     line-height: 100%;
+    font-size: 100%;
   }
 }
 
@@ -101,6 +102,7 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    min-width: 0px;
   }
 }
 

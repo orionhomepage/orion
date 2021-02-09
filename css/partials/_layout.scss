@@ -29,6 +29,7 @@
 
         @include responsive(){
             line-height: 100%;
+            font-size: 100%;
         }
     }
 
@@ -44,6 +45,7 @@
     @include responsive(){
         width: 100%;
         align-items: center;
+        min-width: 0px;
     }
 }
 

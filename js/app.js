@@ -29,15 +29,11 @@ document.addEventListener('DOMContentLoaded', () =>{
     {y: -50, opacity: 0},
     {y: 0, opacity: 1, ease: Expo.easeInOut})
 
-    .fromTo('.btn', 0.7,
-    {y: -50, opacity: 0},
-    {y: 0, opacity: 1, ease: Expo.easeInOut})
+    .fromTo('.buttons', 0.7,
+    {opacity: 0},
+    {opacity: 1, ease: Expo.easeInOut})
 
-    .fromTo('.btn-secondary', 0.7,
-    {y: -50, opacity: 0},
-    {y: 0, opacity: 1, ease: Expo.easeInOut}, '-=1')
-
-    .fromTo('.jersey', 3,
+    .fromTo('.jersey', 2,
     {y: -50, opacity: 0},
     {y: 0, opacity: 1, ease: Expo.easeInOut})
 })

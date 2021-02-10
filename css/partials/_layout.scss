@@ -10,7 +10,7 @@
 
     @include responsive(){
         flex-direction: column;
-        height: 90vh;
+        height: auto;
     }
 }
 
@@ -28,8 +28,7 @@
         line-height: 60%;
 
         @include responsive(){
-            line-height: 100%;
-            font-size: 100%;
+            display: none;
         }
     }
 
@@ -43,6 +42,7 @@
     }
 
     @include responsive(){
+        margin-top: 10%;
         width: 100%;
         align-items: center;
         min-width: 0px;
@@ -167,7 +167,6 @@ small{
     justify-content: center;
     align-items: center;
 
-
     &::after{
         content: '';
         width: 100%;
@@ -180,6 +179,9 @@ small{
 
         background: linear-gradient(270deg, #000D15 32.22%, rgba(0, 13, 21, 0.8) 49.85%, #000D15 67.23%);
         
+        @include responsive(){
+            background: $dark;
+        }
       }
 
     
@@ -199,4 +201,33 @@ small{
 
     background: linear-gradient(225deg, $blue 0%, $blue-med 100%);
 
+}
+
+.bg-lines{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg{
+        width: 100%;
+        border: 0px solid green;
+
+        @include responsive(){
+            height: 200%;
+            border: 0px solid red;
+        }
+        
+    }
+    
 }
